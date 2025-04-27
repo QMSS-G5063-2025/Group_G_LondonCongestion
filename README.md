@@ -15,7 +15,7 @@ Guided by **Professor Thomas Brambor**.
 
 ### **📊 Dataset**:
 The dataset is publicly available from the **New York State Open Data Portal** and contains **vehicle entries data** related to tolling and traffic in the **Congestion Relief Zone** (CRZ) of Manhattan.  
-Access the dataset here: [MTA Congestion Relief Zone Vehicle Entries Dataset](https://data.ny.gov/Transportation/MTA-Congestion-Relief-Zone-Vehicle-Entries-Beginni/t6yz-b64h/about_data).
+Access the dataset here: [MTA Congestion Relief Zone Vehicle Entries Dataset](https://www.mta.info/article/most-detailed-view-of-nyc-traffic-so-far).
 
 ### **🛠️ What We Will Do**:
 - **Data Exploration & Preparation**: Clean and preprocess the dataset for analysis.
