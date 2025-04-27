@@ -15,7 +15,19 @@ Guided by **Professor Thomas Brambor**.
 
 ### **📊 Dataset**:
 The dataset is publicly available from the **New York State Open Data Portal** and contains **vehicle entries data** related to tolling and traffic in the **Congestion Relief Zone** (CRZ) of Manhattan.  
-Access the dataset here: [MTA Congestion Relief Zone Vehicle Entries Dataset](https://www.mta.info/article/most-detailed-view-of-nyc-traffic-so-far).
+Access the dataset here: [MTA Congestion Relief Zone Vehicle Entries Dataset](https://data.ny.gov/Transportation/MTA-Congestion-Relief-Zone-Vehicle-Entries-Beginni/t6yz-b64h/about_data).
+
+#### **Dataset Overview**:
+The dataset provides **daily traffic volumes**, including **vehicle entries** to **CRZ** and **Excluded Roadways** in Manhattan. The data includes details on **vehicle type**, **crossing points**, and **hourly entries**. It spans a range of **vehicle classes** such as cars, buses, trucks, and taxis.
+
+Here is a preview of the dataset:
+Toll Date | Toll Hour | Detection Group | Vehicle Class | CRZ Entries | Excluded Roadway Entries
+2025-01-05 | 00:00 | Brooklyn Bridge | Class 1 | 1500 | 300
+2025-01-05 | 01:00 | Manhattan Bridge | Class 2 | 1200 | 250
+2025-01-05 | 02:00 | Queensboro Bridge | Class 3 | 800 | 150
+2025-01-06 | 00:00 | Williamsburg Bridge | Class 4 | 1400 | 200
+2025-01-06 | 01:00 | Lincoln Tunnel | Class 5 | 1300 | 180
+... |  |  |  |  | 
 
 ### **🛠️ What We Will Do**:
 - **Data Exploration & Preparation**: Clean and preprocess the dataset for analysis.
