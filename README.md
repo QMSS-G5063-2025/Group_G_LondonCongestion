@@ -43,7 +43,7 @@ Toll Date    | Toll Hour  | Detection Group | Vehicle Class | CRZ Entries | Excl
 - **Public Awareness**: Share visualized data for public awareness, policy decisions, and future urban planning.
 
 ### **🌐 Interactive Visualization Website**:
-- The **interactive dashboard** [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://xr984wvkfp64dyamsdb5l5.streamlit.app/) for exploring CRZ entries data is hosted on **Streamlit**. 
+- The **interactive dashboard** [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://xr984wvkfp64dyamsdb5l5.streamlit.app/) for exploring CRZ entries data is hosted on **Streamlit**. 
 ---
 
 
