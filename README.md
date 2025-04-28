@@ -43,15 +43,14 @@ Toll Date    | Toll Hour  | Detection Group | Vehicle Class | CRZ Entries | Excl
 - **Public Awareness**: Share visualized data for public awareness, policy decisions, and future urban planning.
 
 ### **🌐 Interactive Visualization Website**:
-- The **interactive dashboard** for exploring CRZ entries data is hosted on **Streamlit**.  
+- The [**interactive dashboard**]((https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://xr984wvkfp64dyamsdb5l5.streamlit.app/)) for exploring CRZ entries data is hosted on **Streamlit**.  
   (https://github.com/QMSS-G5063-2025/Group_G_LondonCongestion/blob/main/visualization.py).
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://xr984wvkfp64dyamsdb5l5.streamlit.app/)
 ---
 
 
 ### How to Use This Repository:
 1. Clone this repository to access all project files and visualizations.
-2. Open the **interactive dashboard** for live traffic analysis.
+2. Click on the **interactive dashboard** for live traffic analysis.
 
 ---
 
