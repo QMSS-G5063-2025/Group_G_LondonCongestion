@@ -9,8 +9,8 @@
 This project focuses on analyzing and visualizing **vehicle entries** into the **Congestion Relief Zone (CRZ)** in Manhattan, New York, as part of the newly implemented **congestion pricing policy**. We will explore traffic flow patterns, vehicle categories, and peak hours through interactive dashboards and visualizations. 
 
 ### **📚 Team Members**:  
-- **Zisu Xia**: yc4460@columbia.edu  
-- **Jenna Cheng**: zx2503@columbia.edu  
+- **Zisu Xia**: zx2503@columbia.edu  
+- **Jenna Cheng**: yc4460@columbia.edu   
 - **Boyan Sun**: bs3579@columbia.edu  
 
 Guided by **Professor Thomas Brambor**.
