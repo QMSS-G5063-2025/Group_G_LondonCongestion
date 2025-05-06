@@ -27,7 +27,7 @@ Source: <a href='https://new.mta.info/' target='_blank'>MTA Official Website</a>
 """, unsafe_allow_html=True)
 
 # --- Load Data ---
-df = pd.read_csv('MTA_Entries.csv')
+df = pd.read_csv("https://raw.githubusercontent.com/QMSS-G5063-2025/Group_G_ManhattanCRZ/main/MTA_Entries.csv")
 df['Toll Hour'] = pd.to_datetime(df['Toll Hour'], format='%m/%d/%Y %I:%M:%S %p')
 df['Toll Date'] = df['Toll Hour'].dt.date
 df['Time'] = df['Toll Hour'].dt.strftime('%H:%M')
