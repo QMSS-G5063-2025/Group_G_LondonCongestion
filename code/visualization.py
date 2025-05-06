@@ -80,9 +80,9 @@ if section == "1. Project Overview":
 elif section == "2. Word Cloud of Entry Points":
     st.title("🗺️ Word Cloud of Vehicle Entry Points (Detection Groups)")
     st.markdown("""
-    The word cloud highlights the most frequently used vehicle entry points into Manhattan’s CRZ. Larger words represent higher traffic volumes at crossings like the Brooklyn Bridge, Queensboro Bridge, and East 60th Street.
-    
-    **Key Insight:**
+    The word cloud highlights the most frequently used vehicle entry points into Manhattan’s CRZ. Larger words represent higher traffic volumes at crossings like the Brooklyn Bridge, Queensboro Bridge, and East 60th Street. 
+
+    **Why it Matters?**
     Helps quickly identify major access points for targeted traffic management.            
     """)
 
@@ -98,7 +98,7 @@ elif section == "2. Word Cloud of Entry Points":
         st.pyplot(fig)
 
     generate_wordcloud()
-
+    
 # --- Section 3: Heatmaps of Entry Points ---
 elif section == "3. Heatmaps of Entry Points":
     st.title("🌉 Heatmaps of Vehicle Entry Points into Manhattan")
@@ -106,7 +106,10 @@ elif section == "3. Heatmaps of Entry Points":
     The heatmaps show traffic distribution across entry points, with deeper red indicating higher volume. Additional views include labels, markers, and bubble scaling for clarity.
     
     **Key Observation:** 
-    Brooklyn Bridge, Queensboro Bridge, and Manhattan Bridge are major congestion hotspots. 
+    Brooklyn Bridge, Queensboro Bridge, and Manhattan Bridge are major congestion hotspots. These entries contribute to increased congestion and longer travel times.
+
+    **Recommended Policy Improvement:**
+    Consider increasing the toll at the most congested entry points (Brooklyn, Queensboro, and Manhattan Bridges), instead of charging the same amount for every congested entry point. By using dynamic pricing or peak-time tolls, traffic at specific entry points could be reduced during rush hours.
     """)
 
     # Add Select View for Heatmap type
@@ -166,8 +169,14 @@ elif section == "4. Percentage of Entries by Detection Region":
     st.markdown("""
     This section shows the share of total entries by region. While East 60th Street is significant alone, regions like Brooklyn and Queens contribute larger combined volumes.
 
-    **Key Insight:**
-    Supports region-level congestion management and policy focus.  
+    **Why it Matters?**
+    Supports region-level congestion management and policy focus. 
+
+    **Key Insights:**
+    Brooklyn contributes the highest percentage of entries (over 20%), followed by East 60th St and Queens, which also show substantial traffic volume. FDR Drive, New Jersey, and West 60th St have moderate entries, while West Side Highway has the least.
+
+    **Recommended Policy Improvement:**
+    For Brooklyn and Queens, policymakers might want to improve public transportation accessibility by enhancing bus and subway services. Offer subsidies or discounted fares for commuters who opt for public transport instead of driving.
     """)
     
     region_data = df.groupby('Detection Region')['CRZ Entries'].sum().reset_index()
@@ -199,8 +208,14 @@ elif section == "5. Average Daily Entries by Vehicle Type":
     st.markdown("""
     The bar chart presents the average daily entries by vehicle category (cars, trucks, buses, etc.).
 
-    **Why it matters:**
+    **Why it Matters?**
     Understanding traffic composition helps evaluate the tolling policy’s impact across vehicle types.  
+    
+    **Key Insights:**
+    Individual drivers like cars, pickups, and vans make up the vast majority of entries into the CRZ.
+
+    **Recommended Policy Improvement:**
+    The policy could offer discounted rates or incentives for high-occupancy vehicles to encourage ride-sharing, carpooling, or using electric vehicles.
     """)
     
     daily_avg = df.groupby(['Toll Date', 'Vehicle Class'])['CRZ Entries'].sum().reset_index()
@@ -218,9 +233,15 @@ elif section == "6. Number of Entries by Time":
 
     **Policy Context:**
     Peak hours have higher toll rates to reduce congestion.
+
+    **Why it Matters?**
+    Focuses on the comparison between Peak vs. Off-Peak periods.
     
-    **Key Observation:** 
-    Entry volumes remain steady, with weekends often showing higher peak entries than weekdays.  
+    **Key Insights:** 
+    Peak hours during weekdays remain high volume of traffic, regardless of higher toll rates during peak hours. This could be because people who live out of Manhattan but work here have to drive to work during morning and evening commute times, regardless of the toll rates.
+
+    **Recommended Policy Improvement:**
+    We don’t think that keep increasing toll rates during peak hours on weekdays could help mitigate congestion during these periods. AND WE DON’T WANT TO DO THIS EITHER!!! Alternatively, ride-sharing programs and incentives for public transportation during weekdays, particularly on Thursday and Friday, when peak congestion is most intense, could help alleviate traffic volumes.
     """)
 
     # View Options
@@ -387,10 +408,16 @@ elif section == "7. Congestion Relief Zone vs. Excluded Roadway Entries":
     st.markdown("""
     Excluded Roadway Entries refer to trips solely on the **FDR Drive**, the **West Side Highway**, and/or any surface roadway portion of the **Hugh L. Carey Tunnel** connecting to West Street (the “Excluded Roadways”).
 
-    **Why this matters:**  
+    **Why this Matters?**  
     - Understand traffic distribution between tolled CRZ entries and toll-free excluded routes.  
     - Evaluate the effectiveness of the congestion pricing policy.  
     - Identify potential congestion shifts to excluded roadways.  
+
+    **Key Insights:**
+    CRZ Entries, compared to Excluded Roadways, remain consistently high across all days, regardless of the toll rates.
+
+    **Recommended Policy Improvement:**
+    Considering the lower volume of Excluded Roadway Entries, the city could promote the use of these roads through incentives or temporary toll-free periods to help distribute traffic more evenly.
     """)
 
     # Filter for Jan 5 - Jan 25, 2025 (as per your original logic)
